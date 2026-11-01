@@ -598,18 +598,20 @@ ul {
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 0rem;
-  margin-right: 30%;
-  margin-left: 30%;
+  align-items: center;
+  grid-auto-flow:column;
+  /* margin-right: 30%;
+  margin-left: 30%; */
 }
 
 
-.team-member {
+/* .team-member {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-}
+} */
 
 .member-avatar {
   width: 100%;
@@ -643,6 +645,7 @@ ul {
 .team-values {
   background-color: var(--primary);
   padding: 2.5rem;
+  grid-column: 2;
 }
 
 .team-values p {
